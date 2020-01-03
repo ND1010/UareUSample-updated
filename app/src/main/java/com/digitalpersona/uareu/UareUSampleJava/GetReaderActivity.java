@@ -52,7 +52,7 @@ public class GetReaderActivity extends Activity
 		try
 		{
 			Context applContext = getApplicationContext();
-			readers = Globals.getInstance().getReaders(applContext);
+			readers = Globals.getInstance().getReaders(GetReaderActivity.this);
 		} catch (UareUException e) 
 		{
 			onBackPressed();
